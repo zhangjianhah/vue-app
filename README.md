@@ -200,9 +200,32 @@ const plugins = [router, Button];
 
 
 
+
+
+
+
+
+
 ## 4.完成
 
 至此，使用vue cli3 + antd（按需加载）配置成功。参考教程<[vue3+antd+koa实战博客，vue实战教程，vuecli4_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Qy4y117gU?p=4)>
+
+
+
+## 5. 配置axios
+
+```shell
+
+npm install axios
+
+
+```
+
+
+
+
+
+
 
 
 
@@ -215,7 +238,4 @@ npm run serve
 //编译项目
 npm run build
 ```
-### 移除eslink
-由于eslink太严格了，直接关闭其检测吧。
-打开首选项--设置--在setting.json中编辑，在展开的json中的最后一行添加``"eslint.enable": false``即可。
 
