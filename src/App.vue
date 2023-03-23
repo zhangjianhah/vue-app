@@ -1,30 +1,68 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view />
+  <a-layout class="layout" >
+    
+    <div style=" width: 100%; background-color: white;">
+        <Top />
+      </div>
+
+    <a-layout-content style="padding: 0 50px;margin-top: 25px;">
+      <div :style="{ background: '#fff', padding: '24px', minHeight: '280px' }">
+        
+        <CarouselDiv />
+        <div>
+          <a-row>
+            <a-col :span="6">
+              <TabTag />
+            </a-col>
+            <a-col :span="18">
+              <Right />
+            </a-col>
+          </a-row>
+        </div>
+        
+        
+      
+      </div>
+      
+    </a-layout-content>
+    <a-layout-footer style="text-align: center">
+      123456
+    </a-layout-footer>
+  </a-layout>
 </template>
+<script>
 
+
+
+import { defineComponent, ref } from 'vue';
+import CarouselDiv from "./views/CarouselDiv.vue";
+import TabTag from "./views/TabTag.vue";
+import Right from "./views/Right.vue";
+import Top from "./views/Top.vue";
+
+
+export default defineComponent({
+
+
+  components: {
+    CarouselDiv,TabTag,Right,Top
+  },
+
+  setup() {
+    return {
+      selectedKeys: ref(['2']),
+    };
+  },
+});
+</script>
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
+#components-layout-demo-basic .ant-layout-header,
+#components-layout-demo-basic .ant-layout-footer {
+  color: #fff;
+  background: #7dbcea;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.kk{
+  background: #7dbcea;
 }
 </style>

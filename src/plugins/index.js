@@ -1,7 +1,7 @@
 import router from "@/router";
 
 //按照需求引入antd
-import { Button } from "ant-design-vue";
+import { Button, Layout, Menu, Breadcrumb, Carousel, Tabs, Row, Col, List, Avatar, Space, Input } from "ant-design-vue";
 
 
 
@@ -10,7 +10,7 @@ import { Button } from "ant-design-vue";
  * 插件集合
  * @type {import("vue").Plugins[]}
  */
-const plugins = [router, Button];
+const plugins = [router, Button, Layout, Menu, Breadcrumb, Carousel, Tabs, Row, Col, List, Avatar, Space, Input];
 
 
 
