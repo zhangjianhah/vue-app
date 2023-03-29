@@ -6,10 +6,13 @@ import { Button, Layout, Menu, Breadcrumb, Carousel, Tabs, Row, Col, List, Avata
 //引入图标
 import { HomeOutlined } from '@ant-design/icons-vue';
 
+import Mammoth from 'mammoth';
 
 //引入mavon-editor
-import mavonEditor from 'mavon-editor'
-import 'mavon-editor/dist/css/index.css'
+import mavonEditor from 'mavon-editor';
+import 'mavon-editor/dist/css/index.css';
+
+
 
 
 
@@ -22,6 +25,7 @@ const plugins = [router, Button, Layout, Menu, Breadcrumb,
 
     HomeOutlined,
 
+    Mammoth,
 
     mavonEditor,
 ];

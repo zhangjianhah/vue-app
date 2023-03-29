@@ -246,3 +246,8 @@ https://github.com/hinesboy/mavonEditor
 
 
 npm install --save @ant-design/icons-vue
+
+
+
+
+npm install --save mammoth
